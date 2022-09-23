@@ -31,7 +31,6 @@ public class CardController : MonoBehaviour
     private CardSO GetRandomCard()
     {
         float random = Random.value;
-        Debug.Log(random + gameObject.name);
         CardType type = random <= 0.2f ? CardType.Heal : random <= 0.55 ? CardType.Attack : CardType.Block;
 
         List<CardSO> cards = new List<CardSO>();
