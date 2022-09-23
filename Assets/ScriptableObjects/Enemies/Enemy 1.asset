@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemy 1
   m_EditorClassIdentifier: 
   Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  Name: Enemy 1
-  Health: 3
+  MinHealth: 5
+  MaxHealth: 10
   MinDamage: 1
   MaxDamage: 6

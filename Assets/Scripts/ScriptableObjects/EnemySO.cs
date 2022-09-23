@@ -4,7 +4,8 @@ using UnityEngine;
 public class EnemySO : ScriptableObject
 {
     public Sprite Sprite;
-    public int Health;
+    public int MinHealth;
+    public int MaxHealth;
     public int MinDamage;
     public int MaxDamage;
 }
