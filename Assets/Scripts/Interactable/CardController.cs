@@ -16,4 +16,12 @@ public class CardController : MonoBehaviour
         cardName.text = card.name;
         cardDescription.text = card.Description;
     }
+
+    private CardSO GetRandomCard()
+    {
+        float random = Random.value;
+        CardType type = random <= 0.2f ? CardType.Heal : random <= 0.55 ? CardType.Attack : CardType.Block;
+
+        return null;
+    }
 }

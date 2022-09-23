@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Card", menuName = "ScriptableObjects/Card", order = 1)]
-public class CardSO : MonoBehaviour
+public class CardSO : ScriptableObject
 {
     public Sprite Sprite;
     public CardType Type;
