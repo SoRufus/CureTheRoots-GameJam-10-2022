@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d908b54ed8b0f2d4db8ced62ebfa55d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 891452974222705132}
+  icon: {fileID: 891452973576593510}
   cardName: {fileID: 891452973564543234}
   cardDescription: {fileID: 891452975132005301}
 --- !u!1 &891452973564543232
