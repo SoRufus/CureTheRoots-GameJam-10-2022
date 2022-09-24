@@ -27,11 +27,6 @@ public class EnemyController : MonoBehaviour
         Initialize();
     }
 
-    private void Update()
-    {
-        NextTurn();
-    }
-
     private void Initialize()
     {
         EnemySO enemy = enemyDatabase.Enemies[gameplayManager.CurrentLevel];
@@ -42,14 +37,16 @@ public class EnemyController : MonoBehaviour
         RefreshStats();
     }
 
-    private void NextTurn()
+    public void EnemyTurn()
     {
         if (gameplayManager.Turn == 0) return;
         if (gameplayManager.Turn % 2 == 0) return;
-
-        dmg = combatDatabase.Combat[gameplayManager.CurrentLevel].EnemyAttacks[gameplayManager.Turn / 2 + 1];
-        RefreshStats();
+        
+        AttackPlayer();
         gameplayManager.Turn++;
+        dmg = combatDatabase.Combat[gameplayManager.CurrentLevel].EnemyAttacks[gameplayManager.Turn / 2];
+
+        RefreshStats();
     }
 
     private void RefreshStats()
@@ -66,8 +63,18 @@ public class EnemyController : MonoBehaviour
         if (health <= 0) return;
     }
 
-    public void EnemyAttack()
+    public void AttackPlayer()
     {
-        gameplayManager.TreeHealth -= dmg;
+        int damageToDealLeft = dmg;
+        if (gameplayManager.Block >= dmg)
+        {
+            gameplayManager.Block -= dmg;
+        }
+        else
+        {
+            damageToDealLeft -= gameplayManager.Block;
+            gameplayManager.Block = 0;
+            gameplayManager.TreeHealth -= damageToDealLeft;
+        }
     }
 }

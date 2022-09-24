@@ -31,11 +31,6 @@ public class CardController : MonoBehaviour
         Refresh();
     }
 
-    private void Update()
-    {
-        BlockCards();
-    }
-
     private void Refresh()
     {
         icon.sprite = currentCard.Sprite;
@@ -48,28 +43,19 @@ public class CardController : MonoBehaviour
     {
         if (gameplayManager.Turn != 0) if (gameplayManager.Turn % 2 != 0) return null;
 
-        gameplayManager.Turn++;
+        gameplayManager.NextTurn();
         return combatDatabase.Combat[gameplayManager.CurrentLevel].Cards[gameplayManager.Turn / 2];
     }
 
     public void UseCard()
     {
+        if (gameplayManager.Turn != 0) if (gameplayManager.Turn % 2 != 0) return;
+
         if (currentCard.Type == CardType.Heal) gameplayManager.TreeHealth += currentCard.Value;
         else if (currentCard.Type == CardType.Attack) enemyManager.AttackEnemy(currentCard.Value);
-        else if (currentCard.Type == CardType.Block) gameplayManager.Shield += currentCard.Value;
+        else if (currentCard.Type == CardType.Block) gameplayManager.Block += currentCard.Value;
 
         currentCard = GetNextCard();
         Refresh();
-    }
-
-    private void BlockCards()
-    {
-        if (gameplayManager.Turn == 0)
-        {
-            cardButton.interactable = true;
-            return;
-        }
-
-        cardButton.interactable = gameplayManager.Turn % 2 == 0;
     }
 }
