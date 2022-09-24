@@ -54,6 +54,14 @@ public class SliderController : MonoBehaviour
         if (index == dialogue.Slides.Count) return;
 
         NextDialogueButton.SetActive(false);
-        if (dialogue.Slides[index].Image != null) slideImage.sprite = dialogue.Slides[index].Image;
+        if (dialogue.Slides[index].Image != null)
+        {
+            slideImage.gameObject.SetActive(true);
+            slideImage.sprite = dialogue.Slides[index].Image;
+        }
+        else
+        {
+            slideImage.gameObject.SetActive(false);
+        }
     }
 }

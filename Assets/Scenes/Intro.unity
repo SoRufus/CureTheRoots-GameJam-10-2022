@@ -540,6 +540,18 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7626129795050235184, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626129795050235186, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626129795050235186, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626129796012049165, guid: 31754c6096126b54ea461114259c5853, type: 3}
       propertyPath: m_Name
       value: SlideShow

@@ -5,6 +5,7 @@ using TMPro;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private SliderController sliderController = null;
     [SerializeField] private TextMeshPro DmgText = null;
     [SerializeField] private TextMeshPro HpText = null;
 
@@ -65,6 +66,8 @@ public class EnemyController : MonoBehaviour
 
     public void AttackPlayer()
     {
+        if (health <= 0) return;
+
         int damageToDealLeft = dmg;
         if (gameplayManager.Block >= dmg)
         {
@@ -76,5 +79,11 @@ public class EnemyController : MonoBehaviour
             gameplayManager.Block = 0;
             gameplayManager.TreeHealth -= damageToDealLeft;
         }
+    }
+
+    private void Death()
+    {
+        if (sliderController != null) sliderController.gameObject.SetActive(true);
+        //if ()
     }
 }
