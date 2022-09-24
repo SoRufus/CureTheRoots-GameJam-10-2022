@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CardsDatabase : MonoBehaviour
 {
+	public Sprite AttackIcon = null;
+	public Sprite BlockIcon = null;
+	public Sprite HealIcon = null;
+
 	public List<CardSO> Cards = new List<CardSO>();
 
 	#region Singleton

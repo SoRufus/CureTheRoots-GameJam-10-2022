@@ -6,26 +6,33 @@ using TMPro;
 
 public class CardController : MonoBehaviour
 {
+    [SerializeField] private Image iconCardType = null;
     [SerializeField] private Image icon = null;
     [SerializeField] private TextMeshProUGUI cardName = null;
-    [SerializeField] private TextMeshProUGUI cardDescription = null;
+    [SerializeField] private TextMeshProUGUI cardValue = null;
 
     private CardsDatabase cardsDatabase = null;
+    private GameplayManager gameplayManager = null;
+    private EnemyManager enemyManager = null;
+    private CardSO currentCard = null;
 
     private void Start()
     {
         cardsDatabase = CardsDatabase.Instance;
+        enemyManager = EnemyManager.Instance;
+        gameplayManager = GameplayManager.Instance;
 
         Initialize();
     }
 
-    public void Initialize()
+    private void Initialize()
     {
-        CardSO card = GetRandomCard();
+        currentCard = GetRandomCard();
 
-        icon.sprite = card.Sprite;
-        cardName.text = card.Name;
-        cardDescription.text = card.Description;
+        icon.sprite = currentCard.Sprite;
+        cardName.text = currentCard.Name;
+        cardValue.text = currentCard.Value.ToString();
+        iconCardType.sprite = currentCard.Type == CardType.Attack ? cardsDatabase.AttackIcon : currentCard.Type == CardType.Block ? cardsDatabase.BlockIcon : cardsDatabase.HealIcon;
     }
 
     private CardSO GetRandomCard()
@@ -41,5 +48,14 @@ public class CardController : MonoBehaviour
         }
 
         return cards[Random.Range(0, cards.Count)];
+    }
+
+    public void UseCard()
+    {
+        if (currentCard.Type == CardType.Heal) gameplayManager.TreeHealth += currentCard.Value;
+        else if (currentCard.Type == CardType.Attack) enemyManager.AttackEnemy(currentCard.Value);
+        else if (currentCard.Type == CardType.Block) gameplayManager.Shield += currentCard.Value;
+
+        Initialize();
     }
 }
