@@ -10,44 +10,46 @@ public class CardController : MonoBehaviour
     [SerializeField] private Image icon = null;
     [SerializeField] private TextMeshProUGUI cardName = null;
     [SerializeField] private TextMeshProUGUI cardValue = null;
+    [SerializeField] private int startingIndex = 0;
 
     private CardsDatabase cardsDatabase = null;
+    private CombatDatabase combatDatabase = null;
     private GameplayManager gameplayManager = null;
     private EnemyManager enemyManager = null;
     private CardSO currentCard = null;
+    private Button cardButton = null;
 
     private void Start()
     {
         cardsDatabase = CardsDatabase.Instance;
         enemyManager = EnemyManager.Instance;
         gameplayManager = GameplayManager.Instance;
+        combatDatabase = CombatDatabase.Instance;
+        cardButton = GetComponentInChildren<Button>();
 
-        Initialize();
+        currentCard = combatDatabase.Combat[gameplayManager.CurrentLevel].StartingCards[startingIndex];
+        Refresh();
     }
 
-    private void Initialize()
+    private void Update()
     {
-        currentCard = GetRandomCard();
+        BlockCards();
+    }
 
+    private void Refresh()
+    {
         icon.sprite = currentCard.Sprite;
         cardName.text = currentCard.Name;
         cardValue.text = currentCard.Value.ToString();
         iconCardType.sprite = currentCard.Type == CardType.Attack ? cardsDatabase.AttackIcon : currentCard.Type == CardType.Block ? cardsDatabase.BlockIcon : cardsDatabase.HealIcon;
     }
 
-    private CardSO GetRandomCard()
+    private CardSO GetNextCard()
     {
-        float random = Random.value;
-        CardType type = random <= 0.2f ? CardType.Heal : random <= 0.55 ? CardType.Attack : CardType.Block;
+        if (gameplayManager.Turn != 0) if (gameplayManager.Turn % 2 != 0) return null;
 
-        List<CardSO> cards = new List<CardSO>();
-
-        foreach (CardSO card in cardsDatabase.Cards)
-        {
-            if(card.Type == type) cards.Add(card);
-        }
-
-        return cards[Random.Range(0, cards.Count)];
+        gameplayManager.Turn++;
+        return combatDatabase.Combat[gameplayManager.CurrentLevel].Cards[gameplayManager.Turn / 2];
     }
 
     public void UseCard()
@@ -56,6 +58,18 @@ public class CardController : MonoBehaviour
         else if (currentCard.Type == CardType.Attack) enemyManager.AttackEnemy(currentCard.Value);
         else if (currentCard.Type == CardType.Block) gameplayManager.Shield += currentCard.Value;
 
-        Initialize();
+        currentCard = GetNextCard();
+        Refresh();
+    }
+
+    private void BlockCards()
+    {
+        if (gameplayManager.Turn == 0)
+        {
+            cardButton.interactable = true;
+            return;
+        }
+
+        cardButton.interactable = gameplayManager.Turn % 2 == 0;
     }
 }

@@ -14,40 +14,56 @@ public class EnemyController : MonoBehaviour
     private GameplayManager gameplayManager = null;
     private EnemyDatabase enemyDatabase = null;
     private EnemyManager enemyManager = null;
+    private CombatDatabase combatDatabase = null;
 
     private void Start()
     {
         gameplayManager = GameplayManager.Instance;
         enemyDatabase = EnemyDatabase.Instance;
         enemyManager = EnemyManager.Instance;
+        combatDatabase = CombatDatabase.Instance;
 
         enemyManager.EnemyController = this;
         Initialize();
+    }
+
+    private void Update()
+    {
+        NextTurn();
     }
 
     private void Initialize()
     {
         EnemySO enemy = enemyDatabase.Enemies[gameplayManager.CurrentLevel];
 
-        dmg = Random.Range(enemy.MinDamage, enemy.MaxDamage);
-        health = Random.Range(enemy.MinHealth, enemy.MaxHealth);
+        dmg = combatDatabase.Combat[gameplayManager.CurrentLevel].EnemyAttacks[0];
+        health = enemyDatabase.Enemies[gameplayManager.CurrentLevel].Health;
 
-        DmgText.text = dmg.ToString();
-        HpText.text = health.ToString();
+        RefreshStats();
     }
 
-    private void RefreshHealth()
+    private void NextTurn()
+    {
+        if (gameplayManager.Turn == 0) return;
+        if (gameplayManager.Turn % 2 == 0) return;
+
+        dmg = combatDatabase.Combat[gameplayManager.CurrentLevel].EnemyAttacks[gameplayManager.Turn / 2 + 1];
+        RefreshStats();
+        gameplayManager.Turn++;
+    }
+
+    private void RefreshStats()
     {
         HpText.text = health.ToString();
+        DmgText.text = dmg.ToString();
     }
     
     public void EnemyAttacked(int value)
     {
         health -= value;
-        RefreshHealth();
+        RefreshStats();
 
         if (health <= 0) return;
-        EnemyAttack();
     }
 
     public void EnemyAttack()
