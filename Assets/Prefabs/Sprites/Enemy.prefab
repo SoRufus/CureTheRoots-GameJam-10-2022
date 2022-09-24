@@ -184,7 +184,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6443932224524784399}
   - component: {fileID: 4128378703193536707}
-  - component: {fileID: 944494061}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -222,28 +221,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac5f7cdf42caee4685a84b0c8c46428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliderController: {fileID: 0}
   DmgText: {fileID: 1842595730070226872}
   HpText: {fileID: 4587382319146947801}
---- !u!95 &944494061
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383992648381778724}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb3a3edecf2df7d46927690a98588c13, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1591503291514240775
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1227382847756539013}
   - component: {fileID: 7027998399940199552}
+  - component: {fileID: 5128520752559488211}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -352,14 +333,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3851950074003997461}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalRotation: {x: 0.00000082234754, y: -0.0007853408, z: -0.0010471211, w: 0.9999992}
+  m_LocalPosition: {x: 0, y: 0, z: -0.29}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.42}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6443932224524784399}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.09, z: -0.12}
 --- !u!212 &7027998399940199552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -412,6 +393,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5128520752559488211
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851950074003997461}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ae4e22b9dd60e8c498dbc3f55c703d53, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4027431716938327477
 GameObject:
   m_ObjectHideFlags: 0

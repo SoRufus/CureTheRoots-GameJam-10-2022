@@ -61,7 +61,7 @@ public class EnemyController : MonoBehaviour
         health -= value;
         RefreshStats();
 
-        if (health <= 0) return;
+        if (health <= 0) Death();
     }
 
     public void AttackPlayer()
@@ -83,7 +83,10 @@ public class EnemyController : MonoBehaviour
 
     private void Death()
     {
-        if (sliderController != null) sliderController.gameObject.SetActive(true);
-        //if ()
+        if (sliderController != null)
+        {
+            sliderController.gameObject.SetActive(true);
+            PlayerPrefs.SetInt("Health", gameplayManager.TreeHealth);
+        }
     }
 }
