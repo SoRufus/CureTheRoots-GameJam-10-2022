@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3f71e20d1a4ba84794c445089b1566a, type: 3}
-  m_Name: AttackTest
+  m_Name: Heal5
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  Type: 1
-  Name: Attack
-  Value: 4
+  Sprite: {fileID: 21300000, guid: 6a28ccb09abf6c74d9c1f85ad677eb59, type: 3}
+  Type: 0
+  Name: Heal
+  Value: 5

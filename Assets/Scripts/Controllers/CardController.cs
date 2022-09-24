@@ -6,9 +6,7 @@ using TMPro;
 
 public class CardController : MonoBehaviour
 {
-    [SerializeField] private Image iconCardType = null;
     [SerializeField] private Image icon = null;
-    [SerializeField] private TextMeshProUGUI cardName = null;
     [SerializeField] private TextMeshProUGUI cardValue = null;
     [SerializeField] private int startingIndex = 0;
 
@@ -34,9 +32,7 @@ public class CardController : MonoBehaviour
     private void Refresh()
     {
         icon.sprite = currentCard.Sprite;
-        cardName.text = currentCard.Name;
         cardValue.text = currentCard.Value.ToString();
-        iconCardType.sprite = currentCard.Type == CardType.Attack ? cardsDatabase.AttackIcon : currentCard.Type == CardType.Block ? cardsDatabase.BlockIcon : cardsDatabase.HealIcon;
     }
 
     private CardSO GetNextCard()
