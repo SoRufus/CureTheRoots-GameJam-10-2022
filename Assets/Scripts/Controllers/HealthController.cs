@@ -7,11 +7,13 @@ public class HealthController : MonoBehaviour
 {
     [SerializeField] private Image healthBar = null;
     [SerializeField] private TextMeshProUGUI healthText = null;
+    [SerializeField] private TextMeshProUGUI shieldText = null;
 
     private RectTransform healthBarRect = null;
     private GameplayManager gameplayManager = null;
 
     private int health = 0;
+    private int shield = 0;
     private float startingWidth = 0;
 
     private void Start()
@@ -24,6 +26,12 @@ public class HealthController : MonoBehaviour
         RefreshHealthBar();
     }
 
+    private void Update()
+    {
+        RefreshHealthBar();
+        RefreshShieldBar();
+    }
+
     private void RefreshHealthBar()
     {
         if (health == gameplayManager.TreeHealth) return;
@@ -32,5 +40,13 @@ public class HealthController : MonoBehaviour
         healthText.text = gameplayManager.TreeHealth.ToString() + "/" + gameplayManager.MaxTreeHealth.ToString();
 
         health = gameplayManager.TreeHealth;
+    }
+
+    private void RefreshShieldBar()
+    {
+        if (shield == gameplayManager.Shield) return;
+
+        shieldText.text = gameplayManager.Shield.ToString();
+        shield = gameplayManager.Shield;
     }
 }
