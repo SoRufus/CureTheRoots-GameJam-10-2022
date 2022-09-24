@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class HealthController : MonoBehaviour
+public class StatsController : MonoBehaviour
 {
     [SerializeField] private Image healthBar = null;
     [SerializeField] private TextMeshProUGUI healthText = null;
@@ -13,7 +13,7 @@ public class HealthController : MonoBehaviour
     private GameplayManager gameplayManager = null;
 
     private int health = 0;
-    private int shield = 0;
+    private int block = 0;
     private float startingWidth = 0;
 
     private void Start()
@@ -23,7 +23,8 @@ public class HealthController : MonoBehaviour
 
         gameplayManager = GameplayManager.Instance;
 
-        RefreshHealthBar();
+        shieldText.text = gameplayManager.Block.ToString();
+        healthText.text = gameplayManager.TreeHealth.ToString() + "/" + gameplayManager.MaxTreeHealth.ToString();
     }
 
     private void Update()
@@ -44,9 +45,9 @@ public class HealthController : MonoBehaviour
 
     private void RefreshShieldBar()
     {
-        if (shield == gameplayManager.Shield) return;
+        if (block == gameplayManager.Block) return;
 
-        shieldText.text = gameplayManager.Shield.ToString();
-        shield = gameplayManager.Shield;
+        shieldText.text = gameplayManager.Block.ToString();
+        block = gameplayManager.Block;
     }
 }

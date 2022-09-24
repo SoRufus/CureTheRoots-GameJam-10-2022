@@ -59,6 +59,7 @@ MonoBehaviour:
   cardName: {fileID: 891452973564543234}
   cardValue: {fileID: 8295927304794206961}
   startingIndex: 0
+  cardButton: {fileID: 9034354322850217068}
 --- !u!1 &891452973564543232
 GameObject:
   m_ObjectHideFlags: 0

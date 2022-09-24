@@ -1677,6 +1677,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 610672735}
     m_Modifications:
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5797469180905955116, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
       propertyPath: m_RootOrder
       value: 2

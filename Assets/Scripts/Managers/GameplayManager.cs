@@ -20,8 +20,21 @@ public class GameplayManager : MonoBehaviour
 	#endregion
 	public int CurrentLevel { get; set; } = 0;
 	public int TreeHealth { get; set; } = 500;
-	public int Shield { get; set; } = 0;
+	public int Block { get; set; } = 0;
 	public int Turn { get; set; } = 0;
 
 	public int MaxTreeHealth = 1000;
+
+	private EnemyManager enemyManager = null;
+
+    private void Start()
+    {
+		enemyManager = EnemyManager.Instance;
+    }
+
+    public void NextTurn()
+    {
+		Turn++;
+		enemyManager.EnemyController.EnemyTurn();
+    }
 }
