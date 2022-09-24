@@ -9,6 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscene1.unity
     guid: 02529d998ffe1cc48991505a573b5e0c
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Cutscene2.unity
+    guid: 758f9f0c6b4748e479c57a3eb38b440c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3.unity
+    guid: 2483bbdbbc9d80945975c96ada22c96a
+  - enabled: 1
+    path: Assets/Scenes/Cutscene4.unity
+    guid: d5fc56f2ac760764188d7e3ad55143a5
+  - enabled: 1
+    path: Assets/Scenes/Cutscene5.unity
+    guid: 9148dce8387bccf438da67616f3fb5c2
+  - enabled: 1
+    path: Assets/Scenes/Enemy1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Enemy2.unity
+    guid: 0e257ac84d151dd4ea2020f4090017e4
+  - enabled: 1
+    path: Assets/Scenes/Enemy3.unity
+    guid: 477d91bce8fcc04439828c972bd689bd
   m_configObjects: {}
