@@ -48,8 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderController: {fileID: 0}
-  DmgText: {fileID: 1842595730070226872}
-  HpText: {fileID: 2159062394087178953}
+  dmgText: {fileID: 1842595730070226872}
+  hpText: {fileID: 2159062394087178953}
+  animators: []
 --- !u!1 &3851950074003997461
 GameObject:
   m_ObjectHideFlags: 0

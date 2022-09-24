@@ -6,8 +6,9 @@ using TMPro;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] private SliderController sliderController = null;
-    [SerializeField] private TextMeshPro DmgText = null;
-    [SerializeField] private TextMeshPro HpText = null;
+    [SerializeField] private TextMeshPro dmgText = null;
+    [SerializeField] private TextMeshPro hpText = null;
+    [SerializeField] private List<Animator> animators = new();
 
     private int dmg = 0;
     private int health = 0;
@@ -52,13 +53,19 @@ public class EnemyController : MonoBehaviour
 
     private void RefreshStats()
     {
-        HpText.text = health.ToString();
-        DmgText.text = dmg.ToString();
+        hpText.text = health.ToString();
+        dmgText.text = dmg.ToString();
     }
     
     public void EnemyAttacked(int value)
     {
         health -= value;
+
+        foreach (Animator animator in animators)
+        {
+            animator.SetTrigger("Damage");
+        }
+
         RefreshStats();
 
         if (health <= 0) Death();
@@ -67,6 +74,11 @@ public class EnemyController : MonoBehaviour
     public void AttackPlayer()
     {
         if (health <= 0) return;
+
+        foreach(Animator animator in animators)
+        {
+            animator.SetTrigger("Attack");
+        }
 
         int damageToDealLeft = dmg;
         if (gameplayManager.Block >= dmg)
@@ -83,10 +95,13 @@ public class EnemyController : MonoBehaviour
 
     private void Death()
     {
-        if (sliderController != null)
+        if (sliderController == null) return;
+
+        sliderController.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("Health", gameplayManager.TreeHealth);
+        foreach (Animator animator in animators)
         {
-            sliderController.gameObject.SetActive(true);
-            PlayerPrefs.SetInt("Health", gameplayManager.TreeHealth);
+            animator.SetTrigger("Death");
         }
     }
 }
