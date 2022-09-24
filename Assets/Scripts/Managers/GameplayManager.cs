@@ -18,7 +18,7 @@ public class GameplayManager : MonoBehaviour
 		}
 	}
 	#endregion
-	public int CurrentLevel { get; set; } = 0;
+	public int CurrentLevel = 0;
 	public int TreeHealth { get; set; } = 500;
 	public int Block { get; set; } = 0;
 	public int Turn { get; set; } = 0;
