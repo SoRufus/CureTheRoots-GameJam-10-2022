@@ -77,7 +77,7 @@ public class EnemyController : MonoBehaviour
         {
             damageToDealLeft -= gameplayManager.Block;
             gameplayManager.Block = 0;
-            gameplayManager.TreeHealth -= damageToDealLeft;
+            gameplayManager.TreeHealth += damageToDealLeft;
         }
     }
 
