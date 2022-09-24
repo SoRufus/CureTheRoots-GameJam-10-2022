@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f71e20d1a4ba84794c445089b1566a, type: 3}
   m_Name: Attack5
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: ae0d07ffcbcf8964dbbd88703676456f, type: 3}
   Type: 1
   Name: Attack
   Value: 5
