@@ -1055,14 +1055,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1227382847756539013, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1227382847756539013, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1383992648381778724, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -1070,10 +1062,6 @@ PrefabInstance:
     - target: {fileID: 6443932224524784399, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443932224524784399, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6443932224524784399, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1115,45 +1103,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7027998399940199552, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7027998399940199552, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7027998399940199552, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
---- !u!1 &944494060 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1383992648381778724, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
-  m_PrefabInstance: {fileID: 944494059}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &944494061
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944494060}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb3a3edecf2df7d46927690a98588c13, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1294129030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,8 +1678,140 @@ PrefabInstance:
     m_TransformParent: {fileID: 610672735}
     m_Modifications:
     - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 94acb63bf31cadf4ab4ef586a4051f9c, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 94acb63bf31cadf4ab4ef586a4051f9c, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e6f4a31b25708940aba622aab30708c, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7710ac9bb07f48a48ad9fd7fb3705bad, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: ec34f53015950b84f89387256db7674f, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7710ac9bb07f48a48ad9fd7fb3705bad, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].Cards.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].Cards.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7710ac9bb07f48a48ad9fd7fb3705bad, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
       propertyPath: Combat.Array.data[0].EnemyAttacks.Array.size
-      value: 5
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[1]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[2]
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
       propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[3]
@@ -1736,8 +1819,164 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
       propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[4]
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[5]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[6]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[7]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[8]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[9]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[1]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[2]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[3]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[4]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[5]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[6]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[7]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[8]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[9]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[10]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].EnemyAttacks.Array.data[11]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: ddaf3836b1758734b89fc208ea01c336, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: ddaf3836b1758734b89fc208ea01c336, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[0].StartingCards.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 94acb63bf31cadf4ab4ef586a4051f9c, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[10]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[11]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].EnemyAttacks.Array.data[12]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 369f3df80557ad84284d5185d1b1b1c6, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e6f4a31b25708940aba622aab30708c, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7710ac9bb07f48a48ad9fd7fb3705bad, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7710ac9bb07f48a48ad9fd7fb3705bad, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
+    - target: {fileID: 4922282774910059353, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
+      propertyPath: Combat.Array.data[1].StartingCards.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
     - target: {fileID: 5797469180905955116, guid: 997cd0dcc4eb5d3459cdf4000b7f131e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1901,6 +2140,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4939227566298276301, guid: 6db2299b3611d7b4688ccd3ef635a145, type: 3}
+      propertyPath: Enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939227566298276301, guid: 6db2299b3611d7b4688ccd3ef635a145, type: 3}
+      propertyPath: Enemies.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: c5332bd2a9afb9b45b912c48f05a98db, type: 2}
+    - target: {fileID: 4939227566298276301, guid: 6db2299b3611d7b4688ccd3ef635a145, type: 3}
+      propertyPath: Enemies.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: aa673d92e18cc8d4798210f29da434cd, type: 2}
     - target: {fileID: 4939227566298276303, guid: 6db2299b3611d7b4688ccd3ef635a145, type: 3}
       propertyPath: m_Name
       value: EnemyDatabase
@@ -1914,6 +2165,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 610672735}
     m_Modifications:
+    - target: {fileID: 2615738449429597168, guid: 17f6686495f6c0347b168ae36fb0b808, type: 3}
+      propertyPath: TreeHealth
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615738449429597168, guid: 17f6686495f6c0347b168ae36fb0b808, type: 3}
+      propertyPath: CurrentLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615738449429597168, guid: 17f6686495f6c0347b168ae36fb0b808, type: 3}
+      propertyPath: MaxTreeHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 2615738449429597169, guid: 17f6686495f6c0347b168ae36fb0b808, type: 3}
       propertyPath: m_RootOrder
       value: 3

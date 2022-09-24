@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Enemy2
   m_EditorClassIdentifier: 
   Sprite: {fileID: 0}
-  Health: 0
+  Health: 24

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 0}
   Type: 2
-  Name: 
+  Name: Defense
   Value: 2
