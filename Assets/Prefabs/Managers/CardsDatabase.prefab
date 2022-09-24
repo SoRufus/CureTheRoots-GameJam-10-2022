@@ -44,10 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693ecbf9d34d88748aab6b97fcce0cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  BlockIcon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  HealIcon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   Cards:
+  - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
+  - {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
   - {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
+  - {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+  - {fileID: 11400000, guid: de0e7ad81f7874f438e81204eb88b142, type: 2}
+  - {fileID: 11400000, guid: cc599a311726377488871cef63b04332, type: 2}
   - {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
+  - {fileID: 11400000, guid: 9e6f4a31b25708940aba622aab30708c, type: 2}
+  - {fileID: 11400000, guid: ec34f53015950b84f89387256db7674f, type: 2}
   - {fileID: 11400000, guid: 013597ad9dfb2644ab1ebf35e1600561, type: 2}
+  - {fileID: 11400000, guid: ddaf3836b1758734b89fc208ea01c336, type: 2}
+  - {fileID: 11400000, guid: 94acb63bf31cadf4ab4ef586a4051f9c, type: 2}
+  - {fileID: 11400000, guid: 369f3df80557ad84284d5185d1b1b1c6, type: 2}
+  - {fileID: 11400000, guid: 7710ac9bb07f48a48ad9fd7fb3705bad, type: 2}
