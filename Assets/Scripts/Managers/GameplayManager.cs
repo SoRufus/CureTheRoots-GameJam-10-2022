@@ -30,6 +30,9 @@ public class GameplayManager : MonoBehaviour
 	private void Start()
 	{
 		enemyManager = EnemyManager.Instance;
+
+		if (CurrentLevel == 0) PlayerPrefs.SetInt("Health", TreeHealth);
+		else TreeHealth = PlayerPrefs.GetInt("Health");
 	}
 
 	public void NextTurn()
