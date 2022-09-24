@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel: 2
-  TreeHealth: 100
-  MaxTreeHealth: 350
+  TreeHealth: 150
+  MaxTreeHealth: 300
