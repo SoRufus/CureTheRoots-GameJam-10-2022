@@ -47,7 +47,7 @@ public class CardController : MonoBehaviour
     {
         if (gameplayManager.Turn != 0) if (gameplayManager.Turn % 2 != 0) return;
 
-        if (currentCard.Type == CardType.Heal) gameplayManager.TreeHealth += currentCard.Value;
+        if (currentCard.Type == CardType.Heal) gameplayManager.TreeHealth -= currentCard.Value;
         else if (currentCard.Type == CardType.Attack) enemyManager.AttackEnemy(currentCard.Value);
         else if (currentCard.Type == CardType.Block) gameplayManager.Block += currentCard.Value;
 
