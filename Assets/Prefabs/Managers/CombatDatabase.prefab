@@ -95,19 +95,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
     EnemyAttacks: 0500000005000000050000000600000006000000060000000700000007000000070000000800000008000000080000000900000009000000090000000a0000000a0000000a0000000a000000
   - StartingCards:
-    - {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+    - {fileID: 11400000, guid: 71bfaed2f919bc84b8e20937909566ab, type: 2}
     - {fileID: 11400000, guid: ec34f53015950b84f89387256db7674f, type: 2}
     - {fileID: 11400000, guid: 7710ac9bb07f48a48ad9fd7fb3705bad, type: 2}
     Cards:
     - {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
-    - {fileID: 11400000, guid: e795bab6de4b3c041956e0436324740f, type: 2}
+    - {fileID: 11400000, guid: ec34f53015950b84f89387256db7674f, type: 2}
     - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
     - {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
     - {fileID: 11400000, guid: eca9b40e49d92a946be0c30392a091dc, type: 2}
     - {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
-    - {fileID: 11400000, guid: 9e6f4a31b25708940aba622aab30708c, type: 2}
+    - {fileID: 11400000, guid: c7ec10c8238d42e43a209e59658c9fad, type: 2}
     - {fileID: 11400000, guid: 3cc8e4180d0c91e40afedda40659c948, type: 2}
-    - {fileID: 11400000, guid: 94acb63bf31cadf4ab4ef586a4051f9c, type: 2}
+    - {fileID: 11400000, guid: eca9b40e49d92a946be0c30392a091dc, type: 2}
     - {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
     - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
     - {fileID: 11400000, guid: e795bab6de4b3c041956e0436324740f, type: 2}
@@ -121,4 +121,5 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
     - {fileID: 11400000, guid: c7ec10c8238d42e43a209e59658c9fad, type: 2}
     - {fileID: 11400000, guid: afe36ab10fae38146895bed48be44fd4, type: 2}
+    - {fileID: 11400000, guid: 71bfaed2f919bc84b8e20937909566ab, type: 2}
     EnemyAttacks: 0a0000000a0000000a0000000b0000000b0000000b0000000b0000000c0000000c0000000c0000000d0000000d0000000d0000000e0000000e0000000e000000
