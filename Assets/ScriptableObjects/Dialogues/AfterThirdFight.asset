@@ -19,9 +19,8 @@ MonoBehaviour:
     Image: {fileID: 0}
   - Text: And old bones.
     Image: {fileID: 0}
-  - Text: Rooty is ready when the fungus shows her the face of Algernon the Sage.
-    Image: {fileID: 0}
-  - Text: The most recent of the great wizards of her village ---
+  - Text: Rooty is ready when the fungus shows her the face of the most recent of
+      the great wizards of her village ---
     Image: {fileID: 0}
   - Text: She used to want to be the next, but now she's not so sure ---
     Image: {fileID: 0}

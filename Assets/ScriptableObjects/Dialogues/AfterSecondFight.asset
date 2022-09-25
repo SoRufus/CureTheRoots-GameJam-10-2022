@@ -16,9 +16,6 @@ MonoBehaviour:
   - Text: This time, Rooty anticipates the vision --- but it still makes her jump
       a little.
     Image: {fileID: 0}
-  - Text: 'She does not recognize these figures: intuition tells her one of them
-      must be basil the patient, the historian whose books line her shelves.'
-    Image: {fileID: 0}
   - Text: The other one...
     Image: {fileID: 0}
   - Text: --- Grace, The tree needs one...
@@ -27,8 +24,8 @@ MonoBehaviour:
     Image: {fileID: 0}
   - Text: The next wizard--
     Image: {fileID: 0}
-  - Text: Basil's vision is weak, like the fungus is forgetting them --- Ironic ---
-      but no one can forget Grace the brilliant.
+  - Text: The vision is weak, like the fungus is forgetting them --- Ironic --- but
+      no one can forget Grace the brilliant.
     Image: {fileID: 0}
   - Text: Rooty isn't sure if what she's witnessing is magical or natural.
     Image: {fileID: 0}

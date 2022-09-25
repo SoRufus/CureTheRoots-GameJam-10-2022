@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BeforeFirstFight
   m_EditorClassIdentifier: 
   Slides:
-  - Text: Sparks explode as the barrier goes out. Rooty hops up and down in exhilaration.
+  - Text: Sparks explode as the barrier goes out.
     Image: {fileID: 0}
   - Text: "One last look at her room \u2013 at the imposing bookshelves, at the dried
       herbs, at her fluffy carpet. "
@@ -23,9 +23,6 @@ MonoBehaviour:
     Image: {fileID: 0}
   - Text: Rooty takes her first steps down -- first shaking, then growing in confidence
       as she looks at the caves and roots around her.
-    Image: {fileID: 0}
-  - Text: Suddenly, she feels a weird smell -- she checks her clothing to find a
-      stain of something green on it.
     Image: {fileID: 0}
   - Text: Suddenly, she feels a weird smell -- she checks her clothing to find a
       stain of something green on it.
