@@ -1154,6 +1154,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3878378667966613440, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.91729975
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878378667966613440, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117606638341466827, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117606638341466827, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.36
+      objectReference: {fileID: 0}
     - target: {fileID: 4128378703193536707, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
       propertyPath: sliderController
       value: 
