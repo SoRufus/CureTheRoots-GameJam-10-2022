@@ -66,9 +66,13 @@ public class EnemyController : MonoBehaviour
             animator.SetTrigger("Damage");
         }
 
-        RefreshStats();
+        if (health <= 0)
+        {
+            health = 0;
+            Death();
+        }
 
-        if (health <= 0) Death();
+        RefreshStats();
     }
 
     public void AttackPlayer()
