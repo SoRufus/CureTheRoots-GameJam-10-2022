@@ -858,6 +858,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4128378703193536707, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
+      propertyPath: disableAttackAnimation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128378703193536707, guid: 9c5f6979aa8c9ea49a929d56acd93f23, type: 3}
       propertyPath: animators.Array.data[0]
       value: 
       objectReference: {fileID: 1290513621}

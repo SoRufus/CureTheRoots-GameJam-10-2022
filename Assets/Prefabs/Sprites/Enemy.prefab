@@ -55,9 +55,9 @@ MonoBehaviour:
   disableAttackAnimation: 0
   audioClips:
   - {fileID: 8300000, guid: 20501c88c7871a349971fd840145d3cf, type: 3}
-  - {fileID: 8300000, guid: f0dc5e59815a64e41aff1e750f1a1d2b, type: 3}
+  - {fileID: 8300000, guid: cb3f6288df94fbd4db83aff5aa48ed7d, type: 3}
   - {fileID: 8300000, guid: 97eac474eca046d4abe7e2a1919d1702, type: 3}
-  - {fileID: 8300000, guid: 0df0e1c8919455c488022cd5620f67fa, type: 3}
+  - {fileID: 8300000, guid: f13836cb4b75236438dcb7be1a62d968, type: 3}
 --- !u!82 &5343545307227023263
 AudioSource:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6294520025128839682}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.39, y: 0.33}
+  m_AnchoredPosition: {x: 2.3900003, y: 0.32999983}
   m_SizeDelta: {x: 0.4491, y: 0.5853}
   m_Pivot: {x: 0.6755798, y: 0.5}
 --- !u!23 &7637587594131615092

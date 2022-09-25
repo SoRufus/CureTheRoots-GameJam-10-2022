@@ -17,14 +17,15 @@ public class SliderController : MonoBehaviour
     private string currentText = "";
     private int index = 0;
     private AudioSource audioSource = null;
-
     private void OnEnable()
     {
-        cardsManager = CardsManager.Instance;
         if(cardsManager != null) cardsManager.ToggleCards(false);
     }
     private void Start()
     {
+        cardsManager = CardsManager.Instance;
+        if (cardsManager != null) cardsManager.ToggleCards(false);
+
         audioSource = GetComponent<AudioSource>();
         Refresh();
         StartCoroutine(ShowText());

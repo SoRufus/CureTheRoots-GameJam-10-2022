@@ -72,7 +72,6 @@ public class EnemyController : MonoBehaviour
             animator.SetTrigger("Damage");
         }
 
-        audioSource.Play();
         if (health <= 0)
         {
             health = 0;
@@ -86,13 +85,13 @@ public class EnemyController : MonoBehaviour
     {
         if (health <= 0) return;
 
-        audioSource.clip = audioClips[gameplayManager.CurrentLevel];
-
         foreach (Animator animator in animators)
         {
            if(!disableAttackAnimation) animator.SetTrigger("Attack");
         }
         if (!disableAttackAnimation)  effectsController.PlayDamageEffect();
+        audioSource.clip = audioClips[gameplayManager.CurrentLevel];
+        if (!disableAttackAnimation) audioSource.Play();
 
         int damageToDealLeft = dmg;
         if (gameplayManager.Block >= dmg)

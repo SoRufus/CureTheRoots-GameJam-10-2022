@@ -49,7 +49,7 @@ public class GameplayManager : MonoBehaviour
 
 	private void EndGame()
     {
-		if (TreeHealth > 0) return;
+		if (MaxTreeHealth < TreeHealth) return;
 		SceneManager.LoadScene("GameOver");
     }
 }
