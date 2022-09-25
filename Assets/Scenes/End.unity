@@ -554,9 +554,17 @@ PrefabInstance:
       propertyPath: m_Maskable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7626129795097379409, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 365
+      objectReference: {fileID: 0}
     - target: {fileID: 7626129795675065166, guid: 31754c6096126b54ea461114259c5853, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626129795675065166, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 271
       objectReference: {fileID: 0}
     - target: {fileID: 7626129796012049165, guid: 31754c6096126b54ea461114259c5853, type: 3}
       propertyPath: m_Name

@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private TextMeshPro hpText = null;
     [SerializeField] private List<Animator> animators = new();
     [SerializeField] private bool disableAttackAnimation = false;
+    [SerializeField] private bool disableAttackedAnimation = false;
     [SerializeField] private List<AudioClip> audioClips = new();
 
     private int dmg = 0;
@@ -69,7 +70,7 @@ public class EnemyController : MonoBehaviour
 
         foreach (Animator animator in animators)
         {
-            animator.SetTrigger("Damage");
+            if (!disableAttackedAnimation) animator.SetTrigger("Damage");
         }
 
         if (health <= 0)
