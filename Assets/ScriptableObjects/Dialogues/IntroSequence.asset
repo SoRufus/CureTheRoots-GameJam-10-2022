@@ -16,9 +16,6 @@ MonoBehaviour:
   - Text: Rooty is going on an adventure - she needs to save this tree that gives
       life to the village from the disease which eats it.
     Image: {fileID: 21300000, guid: 76bef871a9f9dd44d9ec690a05d3dc79, type: 3}
-  - Text: The dusty old tome left on her shelf tells her of the entire ritual to
-      open the door down.
-    Image: {fileID: 21300000, guid: 76bef871a9f9dd44d9ec690a05d3dc79, type: 3}
   - Text: It won't be long, the village elders said, until our village succumbs to
       disease.
     Image: {fileID: 21300000, guid: 76bef871a9f9dd44d9ec690a05d3dc79, type: 3}

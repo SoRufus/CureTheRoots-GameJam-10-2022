@@ -24,13 +24,9 @@ MonoBehaviour:
     Image: {fileID: 21300000, guid: b4075d97686f2a547876f4fb3f5e677e, type: 3}
   - Text: Up on the surface, little mice go on playing and learning.
     Image: {fileID: 21300000, guid: b4075d97686f2a547876f4fb3f5e677e, type: 3}
-  - Text: Linus brews a wonderful-smelling tea.
-    Image: {fileID: 21300000, guid: b4075d97686f2a547876f4fb3f5e677e, type: 3}
-  - Text: Penelope enjoys time after class with her family.
-    Image: {fileID: 21300000, guid: b4075d97686f2a547876f4fb3f5e677e, type: 3}
   - Text: Tales will be told of the bravery of one Rooty the Shy and how she defeated
       the disease holding the mother tree.
-    Image: {fileID: 0}
+    Image: {fileID: 21300000, guid: b4075d97686f2a547876f4fb3f5e677e, type: 3}
   - Text: And if another wizard goes down the same path in the future...
     Image: {fileID: 21300000, guid: b4075d97686f2a547876f4fb3f5e677e, type: 3}
   - Text: But let's not think about it now, shall we?
