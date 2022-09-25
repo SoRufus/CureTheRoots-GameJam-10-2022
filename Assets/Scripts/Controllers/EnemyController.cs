@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private TextMeshPro dmgText = null;
     [SerializeField] private TextMeshPro hpText = null;
     [SerializeField] private List<Animator> animators = new();
+    [SerializeField] private bool disableAttackAnimation = false;
 
     private int dmg = 0;
     private int health = 0;
@@ -83,9 +84,9 @@ public class EnemyController : MonoBehaviour
 
         foreach(Animator animator in animators)
         {
-            animator.SetTrigger("Attack");
+           if(!disableAttackAnimation) animator.SetTrigger("Attack");
         }
-        effectsController.PlayDamageEffect();
+        if (!disableAttackAnimation)  effectsController.PlayDamageEffect();
 
         int damageToDealLeft = dmg;
         if (gameplayManager.Block >= dmg)
