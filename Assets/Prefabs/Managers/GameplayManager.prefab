@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81fe41aa5a236cf49aa1a8244dab613b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentLevel: 2
+  CurrentLevel: 0
   TreeHealth: 150
   MaxTreeHealth: 300
