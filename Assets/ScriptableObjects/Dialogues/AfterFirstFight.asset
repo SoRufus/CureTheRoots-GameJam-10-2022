@@ -12,4 +12,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: AfterFirstFight
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: ...Phew.
+    Image: {fileID: 0}
+  - Text: "The repulsive fungus lies destroyed. Rooty turns to walk away \u2013"
+    Image: {fileID: 0}
+  - Text: An old mouse's voice comes from behind her.
+    Image: {fileID: 0}
+  - Text: An old mouse's voice comes from behind her. Although she has never heard
+      her voice, rooty's mind immediately tells her that this is the voice of Grace
+      the village founder.
+    Image: {fileID: 0}
+  - Text: Although she has never heard her voice, Rooty's mind immediately tells
+      her that this is the voice of Grace the village founder.
+    Image: {fileID: 0}
+  - Text: "\u2026 I'm sorry Elmo, this is the only--"
+    Image: {fileID: 0}
+  - Text: "--Someone to watch over \u2013"
+    Image: {fileID: 0}
+  - Text: "\u2013 Necessary sacrifice ---"
+    Image: {fileID: 0}
+  - Text: Rooty turns back and sees a flutter of a vision. Grace vanishes, her voice
+      echoing.
+    Image: {fileID: 0}
+  - Text: Grace vanishes, her voice echoing. Rooty assumes that the shadow of a lanky
+      young mouse must be this Elmo she is talking to.
+    Image: {fileID: 0}
+  - Text: Rooty assumes that the shadow of a lanky young mouse must be this Elmo
+      she is talking to.
+    Image: {fileID: 0}
+  - Text: Elmo the Spark, one of Rooty's predecessors...
+    Image: {fileID: 0}
+  - Text: His echo is too weak to make out more than a few words.
+    Image: {fileID: 0}
+  - Text: --- Keep vigil...
+    Image: {fileID: 0}
+  - Text: --- Return to my family...
+    Image: {fileID: 0}
+  - Text: "All of Rooty's hairs stand up \u2013 her breath hitches in her throat
+      as she's overcome with an unknown feeling at the scene."
+    Image: {fileID: 0}

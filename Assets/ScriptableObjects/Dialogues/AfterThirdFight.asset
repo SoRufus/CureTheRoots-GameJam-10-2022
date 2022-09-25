@@ -12,4 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: AfterThirdFight
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: The grave is decorated with intricate carvings.
+    Image: {fileID: 0}
+  - Text: An infinity of things to past the time...
+    Image: {fileID: 0}
+  - Text: And old bones.
+    Image: {fileID: 0}
+  - Text: Rooty is ready when the fungus shows her the face of Algernon the Sage.
+    Image: {fileID: 0}
+  - Text: The most recent of the great wizards of her village ---
+    Image: {fileID: 0}
+  - Text: She used to want to be the next, but now she's not so sure ---
+    Image: {fileID: 0}
+  - Text: --- So proud...
+    Image: {fileID: 0}
+  - Text: To keep her alive...
+    Image: {fileID: 0}
+  - Text: I'm only a small mouse, and she is everything.
+    Image: {fileID: 0}
+  - Text: ---He looks at her face.
+    Image: {fileID: 0}
+  - Text: She is speechless as he gives her a warm smile...
+    Image: {fileID: 0}
+  - Text: But his eyes are very sad.
+    Image: {fileID: 0}
+  - Text: He reaches towards her with his hand ---
+    Image: {fileID: 0}

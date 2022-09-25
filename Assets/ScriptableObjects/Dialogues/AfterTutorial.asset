@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: AfterTutorial
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: The further you go, the harder Rooty's enemies will try to corrupt the
+      tree. You can see the extent of the corruption on top of your screen.
+    Image: {fileID: 0}
+  - Text: Don't let it get to 100!
+    Image: {fileID: 0}

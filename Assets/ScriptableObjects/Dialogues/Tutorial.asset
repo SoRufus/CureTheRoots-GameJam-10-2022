@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: 'Rooty has three powers at her disposal: a spell attack, an action to defend,
+      and a healing spell on the tree.'
+    Image: {fileID: 0}
+  - Text: Healing is unavailable for now.
+    Image: {fileID: 0}
+  - Text: Attack the door to weaken it and try to avoid damage during the ritual.
+    Image: {fileID: 0}

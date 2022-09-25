@@ -12,4 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: Ending
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: Rooty feels Algernon's magic grip her, overwhelming and beautiful.
+    Image: {fileID: 0}
+  - Text: She feels stronger than ever before.
+    Image: {fileID: 0}
+  - Text: The tree is saved, the tree was saved, the tree will be safe.
+    Image: {fileID: 0}
+  - Text: She stays, like Grace did, like Elmo did, like Basil did, like Gloria did,
+      like Algernon did before her.
+    Image: {fileID: 0}
+  - Text: Up on the surface, little mice go on playing and learning.
+    Image: {fileID: 0}
+  - Text: Linus brews a wonderful-smelling tea.
+    Image: {fileID: 0}
+  - Text: Penelope enjoys time after class with her family.
+    Image: {fileID: 0}
+  - Text: Tales will be told of the bravery of one Rooty the Shy and how she defeated
+      the disease holding the mother tree.
+    Image: {fileID: 0}
+  - Text: And if another wizard goes down the same path in the future...
+    Image: {fileID: 0}
+  - Text: But let's not think about it now, shall we?
+    Image: {fileID: 0}
