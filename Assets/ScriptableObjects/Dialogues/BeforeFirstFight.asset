@@ -15,12 +15,6 @@ MonoBehaviour:
   Slides:
   - Text: Sparks explode as the barrier goes out.
     Image: {fileID: 0}
-  - Text: "One last look at her room \u2013 at the imposing bookshelves, at the dried
-      herbs, at her fluffy carpet. "
-    Image: {fileID: 0}
-  - Text: Then, rooty puts the daisy by her ear, gathers her pack... and she takes
-      a step into the unknown.
-    Image: {fileID: 0}
   - Text: Rooty takes her first steps down -- first shaking, then growing in confidence
       as she looks at the caves and roots around her.
     Image: {fileID: 0}

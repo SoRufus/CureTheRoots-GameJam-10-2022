@@ -13,20 +13,8 @@ MonoBehaviour:
   m_Name: IntroSequence
   m_EditorClassIdentifier: 
   Slides:
-  - Text: 'A tiny beam of sunshine hits the leaf curtains, just as it does every
-      single morning. '
-    Image: {fileID: 0}
-  - Text: It hits Little Rooty's snout, and she greets the new day with a smile.
-    Image: {fileID: 0}
   - Text: Rooty is going on an adventure - she needs to save this tree that gives
       life to the village from the disease which eats it.
-    Image: {fileID: 0}
-  - Text: She isn't worried.
-    Image: {fileID: 0}
-  - Text: The dusty old tome left on her shelf tells her of the entire ritual to
-      open the door down.
-    Image: {fileID: 0}
-  - Text: The fungus has taken root deep under the tree's old bark.
     Image: {fileID: 0}
   - Text: It won't be long, the village elders said, until our village succumbs to
       disease.

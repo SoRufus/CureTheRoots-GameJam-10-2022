@@ -16,5 +16,5 @@ MonoBehaviour:
   - Text: The further you go, the harder Rooty's enemies will try to corrupt the
       tree. You can see the extent of the corruption on top of your screen.
     Image: {fileID: 0}
-  - Text: Don't let it get to 100!
+  - Text: Don't let it get to 300!
     Image: {fileID: 0}
