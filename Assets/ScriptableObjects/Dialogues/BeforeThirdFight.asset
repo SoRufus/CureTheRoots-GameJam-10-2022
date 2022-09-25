@@ -12,4 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: BeforeThirdFight
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: It surprises Rooty how quickly she finds the final chamber.
+    Image: {fileID: 0}
+  - Text: She approaches gingerly what looks to be a door, but grown out of roots
+      themselves.
+    Image: {fileID: 0}
+  - Text: The thing she sees scares her.
+    Image: {fileID: 0}
+  - Text: It doesn't seem to have a beginning or an end...
+    Image: {fileID: 0}
+  - Text: She heaves a sigh.
+    Image: {fileID: 0}
+  - Text: Her time has come.
+    Image: {fileID: 0}

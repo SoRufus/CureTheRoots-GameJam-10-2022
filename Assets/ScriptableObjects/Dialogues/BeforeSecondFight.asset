@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: BeforeSecondFight
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: The further down she goes, the worse the corruption gets...
+    Image: {fileID: 0}
+  - Text: 'Sadness overtakes Rooty as she sees the fungus-infested roots of the Mother
+      Tree. '
+    Image: {fileID: 0}
+  - Text: Alongside them, remains of various earth-burrowing animals.
+    Image: {fileID: 0}
+  - Text: She is surprised when one of them moves...
+    Image: {fileID: 0}

@@ -12,4 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: IntroSequence
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: 'A tiny beam of sunshine hits the leaf curtains, just as it does every
+      single morning. '
+    Image: {fileID: 0}
+  - Text: It hits Little Rooty's snout, and she greets the new day with a smile.
+    Image: {fileID: 0}
+  - Text: The mice in her village have already gathered by her home.
+    Image: {fileID: 0}
+  - Text: 'Old Linus the herbalist gives her a daisy, worry deep in his eyes. '
+    Image: {fileID: 0}
+  - Text: Penelope, the school teacher, brought her class to sing Rooty a sweet little
+      song to cheer her on.
+    Image: {fileID: 0}
+  - Text: 'Rooty is going on an adventure - she needs to save this tree that gives
+      life to the village from the disease which eats it. '
+    Image: {fileID: 0}
+  - Text: It is their safe haven in the dangerous forest.
+    Image: {fileID: 0}
+  - Text: She isn't worried.
+    Image: {fileID: 0}
+  - Text: The dusty old tome left on her shelf tells her of the entire ritual to
+      open the door down.
+    Image: {fileID: 0}
+  - Text: She's read a lot about grace the wise, the old wizard who founded the village,
+      and drinks in her words.
+    Image: {fileID: 0}
+  - Text: Rooty examines the wall by her desk.
+    Image: {fileID: 0}
+  - Text: The fungus has taken root deep under the tree's old bark.
+    Image: {fileID: 0}
+  - Text: It won't be long, the village elders said, until our village succumbs to
+      disease.
+    Image: {fileID: 0}
+  - Text: You have to go now.
+    Image: {fileID: 0}

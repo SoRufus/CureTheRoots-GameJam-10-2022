@@ -12,4 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151e374c6b4884448cc36f30d9c2fe6, type: 3}
   m_Name: AfterSecondFight
   m_EditorClassIdentifier: 
-  Slides: []
+  Slides:
+  - Text: This time, Rooty anticipates the vision --- but it still makes her jump
+      a little.
+    Image: {fileID: 0}
+  - Text: 'She does not recognize these figures: intuition tells her one of them
+      must be basil the patient, the historian whose books line her shelves.'
+    Image: {fileID: 0}
+  - Text: The other one...
+    Image: {fileID: 0}
+  - Text: --- Grace, The tree needs one...
+    Image: {fileID: 0}
+  - Text: ...Our bones ---
+    Image: {fileID: 0}
+  - Text: The next wizard--
+    Image: {fileID: 0}
+  - Text: Basil's vision is weak, like the fungus is forgetting them --- Ironic ---
+      but no one can forget Grace the brilliant.
+    Image: {fileID: 0}
+  - Text: Rooty isn't sure if what she's witnessing is magical or natural.
+    Image: {fileID: 0}
+  - Text: She has read about networks of mushrooms keeping memories--
+    Image: {fileID: 0}
+  - Text: --- They wouldn't want to...
+    Image: {fileID: 0}
+  - Text: --- Kept secret from...
+    Image: {fileID: 0}
+  - Text: As the vision fades, Rooty swallows and turns away.
+    Image: {fileID: 0}
