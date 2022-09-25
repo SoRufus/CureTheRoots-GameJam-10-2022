@@ -29,6 +29,11 @@ public class SliderController : MonoBehaviour
         if (index == dialogue.Slides.Count)
         {
             CancelInvoke();
+            if(NextScene == "")
+            {
+                gameObject.SetActive(false);
+                return;
+            }
             SceneManager.LoadScene(NextScene);
         }
         NextDialogueButton.SetActive(false);

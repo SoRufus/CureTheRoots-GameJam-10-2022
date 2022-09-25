@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour
     private EnemyDatabase enemyDatabase = null;
     private EnemyManager enemyManager = null;
     private CombatDatabase combatDatabase = null;
+    private EffectsController effectsController = null;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class EnemyController : MonoBehaviour
         enemyDatabase = EnemyDatabase.Instance;
         enemyManager = EnemyManager.Instance;
         combatDatabase = CombatDatabase.Instance;
+        effectsController = EffectsController.Instance;
 
         enemyManager.EnemyController = this;
         Initialize();
@@ -83,6 +85,7 @@ public class EnemyController : MonoBehaviour
         {
             animator.SetTrigger("Attack");
         }
+        effectsController.PlayDamageEffect();
 
         int damageToDealLeft = dmg;
         if (gameplayManager.Block >= dmg)
