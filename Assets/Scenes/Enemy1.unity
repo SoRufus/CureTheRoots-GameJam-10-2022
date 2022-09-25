@@ -305,6 +305,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: affab1f0eaae15445a99d9ab79b9ffa0, type: 2}
+    - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
       propertyPath: NextScene
       value: Enemy2
       objectReference: {fileID: 0}
@@ -1002,6 +1006,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bdce958c40884845a5f569ab807bd0a, type: 2}
     - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
       propertyPath: NextScene
       value: 

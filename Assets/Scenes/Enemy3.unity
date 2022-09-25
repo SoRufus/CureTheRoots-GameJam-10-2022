@@ -1090,6 +1090,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 54788b716afcc504c8320a2fad048dec, type: 2}
+    - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
       propertyPath: NextScene
       value: End
       objectReference: {fileID: 0}
@@ -1301,6 +1305,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: f8fb93dfa8b2cfa40923835d960e219b, type: 2}
     - target: {fileID: 7626129796012049167, guid: 31754c6096126b54ea461114259c5853, type: 3}
       propertyPath: NextScene
       value: 
