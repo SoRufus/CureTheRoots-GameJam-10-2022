@@ -31,12 +31,12 @@ public class SliderController : MonoBehaviour
         StartCoroutine(ShowText());
     }
 
-    public void NextDialogue()
+    private void NextDialogue()
     {
         index++;
         if (index == dialogue.Slides.Count)
         {
-            CancelInvoke();
+            StopAllCoroutines();
             if(NextScene == "")
             {
                 if (cardsManager != null) cardsManager.ToggleCards(true);
@@ -78,5 +78,17 @@ public class SliderController : MonoBehaviour
         {
             slideImage.gameObject.SetActive(false);
         }
+    }
+
+    public void SkipDialogue()
+    {
+        if (slideText.text != dialogue.Slides[index].Text)
+        {
+            StopAllCoroutines();
+            NextDialogueButton.SetActive(true);
+            slideText.text = dialogue.Slides[index].Text;
+            return;
+        }
+        NextDialogue();
     }
 }
