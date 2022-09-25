@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private TextMeshPro hpText = null;
     [SerializeField] private List<Animator> animators = new();
     [SerializeField] private bool disableAttackAnimation = false;
+    [SerializeField] private List<AudioClip> audioClips = new();
 
     private int dmg = 0;
     private int health = 0;
@@ -19,6 +20,7 @@ public class EnemyController : MonoBehaviour
     private EnemyManager enemyManager = null;
     private CombatDatabase combatDatabase = null;
     private EffectsController effectsController = null;
+    private AudioSource audioSource = null;
 
     private void Start()
     {
@@ -27,6 +29,7 @@ public class EnemyController : MonoBehaviour
         enemyManager = EnemyManager.Instance;
         combatDatabase = CombatDatabase.Instance;
         effectsController = EffectsController.Instance;
+        audioSource = GetComponent<AudioSource>();
 
         enemyManager.EnemyController = this;
         Initialize();
@@ -69,6 +72,7 @@ public class EnemyController : MonoBehaviour
             animator.SetTrigger("Damage");
         }
 
+        audioSource.Play();
         if (health <= 0)
         {
             health = 0;
@@ -82,7 +86,9 @@ public class EnemyController : MonoBehaviour
     {
         if (health <= 0) return;
 
-        foreach(Animator animator in animators)
+        audioSource.clip = audioClips[gameplayManager.CurrentLevel];
+
+        foreach (Animator animator in animators)
         {
            if(!disableAttackAnimation) animator.SetTrigger("Attack");
         }

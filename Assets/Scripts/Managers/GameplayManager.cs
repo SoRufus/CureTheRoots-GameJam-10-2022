@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -35,9 +36,20 @@ public class GameplayManager : MonoBehaviour
 		else TreeHealth = PlayerPrefs.GetInt("Health");
 	}
 
-	public void NextTurn()
+    private void Update()
+    {
+		EndGame();
+    }
+
+    public void NextTurn()
 	{
 		Turn++;
 		enemyManager.EnemyController.EnemyTurn();
 	}
+
+	private void EndGame()
+    {
+		if (TreeHealth > 0) return;
+		SceneManager.LoadScene("GameOver");
+    }
 }

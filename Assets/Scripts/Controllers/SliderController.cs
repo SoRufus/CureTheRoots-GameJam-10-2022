@@ -13,12 +13,19 @@ public class SliderController : MonoBehaviour
     [SerializeField] private float speed = 0.01f;
     [SerializeField] private string NextScene = "";
 
-
+    private CardsManager cardsManager = null;
     private string currentText = "";
     private int index = 0;
+    private AudioSource audioSource = null;
 
+    private void OnEnable()
+    {
+        cardsManager = CardsManager.Instance;
+        if(cardsManager != null) cardsManager.ToggleCards(false);
+    }
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         Refresh();
         StartCoroutine(ShowText());
     }
@@ -31,6 +38,7 @@ public class SliderController : MonoBehaviour
             CancelInvoke();
             if(NextScene == "")
             {
+                if (cardsManager != null) cardsManager.ToggleCards(true);
                 gameObject.SetActive(false);
                 return;
             }
@@ -46,6 +54,7 @@ public class SliderController : MonoBehaviour
             if (index == dialogue.Slides.Count) yield return null;
             for (int i = 0; i < dialogue.Slides[index].Text.Length + 1; i++)
             {
+            audioSource.PlayOneShot(audioSource.clip);
             currentText = dialogue.Slides[index].Text.Substring(0, i);
             slideText.text = currentText;
             if (slideText.text == dialogue.Slides[index].Text) NextDialogueButton.SetActive(true);

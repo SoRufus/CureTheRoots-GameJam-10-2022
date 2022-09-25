@@ -61,7 +61,10 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
     - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
     - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
-    EnemyAttacks: 0000000000000000000000000000000000000000
+    - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
+    - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
+    - {fileID: 11400000, guid: 21c1c644d6ed48249bad1fcc3d3b81ab, type: 2}
+    EnemyAttacks: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   - StartingCards:
     - {fileID: 11400000, guid: 64c31b0100f28d943a39cf066e2af7e2, type: 2}
     - {fileID: 11400000, guid: f00ca57a70e2bc1409d307b23a8a2ecd, type: 2}
